@@ -7,17 +7,28 @@
     <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-auth.js"></script>
 
+    <script
+      src="https://kit.fontawesome.com/64d58efce2.js"
+      crossorigin="anonymous"
+    ></script>
+
     <link rel="stylesheet" href="style.css" />
     <title>Page 1</title>
   </head>
   <body>
+    <div class="oneline">
+      <h1 style="text-align: left;">Staff Login</h1>
+      <a href="/index.html">
+        <h1 style="text-align: right" >Home</h1>
+      </a>
+    </div>
     <div class="container" id="loginForm">
       <div class="forms-container">
         <div class="signin-reset">
           <form action="#" class="sign-in-form">
-            <h2 class="title">Welcome Back!</h2>
+            <h2 class="title">Welcome Back 👋 </h2>
             <div class="input-field">
-              <i class="fas fa-envolope"></i>
+              <i class="fas fa-envelope"></i>
               <input type="text" placeholder="Email" id="email"/>
             </div>
             <div class="input-field">
@@ -27,9 +38,19 @@
             <input type="submit" value="Login" class="btn solid" onclick="signIn()" id="signIp" />
             <!--Add Forgot Password Here-->
             <div class="forgot-password">
-              <p>Forgot Password</p>
-              <a href="#" class="reset" id="reset" type="submit">Reset</a>
+              <p>Forgot Password </p>
+              <a href="#" class="reset" id="sign-up-btn" type="submit">Reset</a>
             </div>
+            <!--Send
+            </form>
+            <form action="#" class="sign-up-form">
+              <h2 class="title">Forgot Password 😫 </h2>
+              <div class="input-field">
+                <i class="fas fa-envelope"></i>
+                <input type="text" placeholder="Email" />
+              </div>
+              <a class="btn solid non" href="main.html">Send Link</a>
+            </form>-->
         </div>
       </div>
 
@@ -62,6 +83,8 @@
       </div>
     </div>
     <script src="firebase.js"></script>
+    <script src="auth.js"></script>
     <script src="app.js"></script>
+    
   </body>
 </html>

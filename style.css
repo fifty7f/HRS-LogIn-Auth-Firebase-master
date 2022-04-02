@@ -11,6 +11,11 @@ input {
   font-family: "Poppins", sans-serif;
 }
 
+.oneline {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
 .container {
   position: relative;
   width: 100%;
